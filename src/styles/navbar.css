@@ -1,0 +1,34 @@
+nav {
+    padding: 0;
+    margin: 0;
+    background: #4269b3;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 10fr 1fr;
+    text-align: center;
+}
+
+nav ul svg {
+    fill: #fff;
+}
+
+nav ul svg:hover {
+    fill: #000;
+}
+
+nav ul li:nth-child(2) {
+    font-size: 20px;
+    font-weight: 900;
+}
