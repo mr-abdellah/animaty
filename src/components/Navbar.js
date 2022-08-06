@@ -6,13 +6,12 @@ import '../styles/navbar.css';
 const Navbar = () => (
   <nav className="navbar">
     <ul>
-      <NavLink to="/home"><AiFillCaretLeft /></NavLink>
+      <NavLink to="/"><AiFillCaretLeft /></NavLink>
       <li>ANIMATY</li>
       <li>
         <MdKeyboardVoice />
         <AiFillSetting />
       </li>
-      {/* <li><AiFillSetting /></li> */}
     </ul>
   </nav>
 );
