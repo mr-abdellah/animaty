@@ -20,7 +20,7 @@
 
 .card-item h4 {
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
     border: 1px solid rgb(148, 141, 141);
 }
