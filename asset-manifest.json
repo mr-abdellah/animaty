@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/animaty/static/css/main.d3550e41.css",
+    "main.js": "/animaty/static/js/main.77acb8fe.js",
+    "index.html": "/animaty/index.html",
+    "main.d3550e41.css.map": "/animaty/static/css/main.d3550e41.css.map",
+    "main.77acb8fe.js.map": "/animaty/static/js/main.77acb8fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3550e41.css",
+    "static/js/main.77acb8fe.js"
+  ]
+}
