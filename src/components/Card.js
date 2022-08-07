@@ -1,23 +1,14 @@
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import { Link } from 'react-router-dom';
+/* eslint-disable react/prop-types */
 import '../styles/card.css';
 
-const CardItem = () => (
-  <Link to="/home">
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-      </ListGroup>
-    </Card>
-  </Link>
+const CardItem = ({
+  pending, id, title, img, episodes,
+}) => (
+  <div className="card-item" id={id} pending={pending}>
+    <img src={img} alt={title} />
+    <h4 id="card-title">{title}</h4>
+    <p>{`Episodes : ${episodes}`}</p>
+  </div>
 );
 
 export default CardItem;
