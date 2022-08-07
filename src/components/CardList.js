@@ -9,7 +9,7 @@ const CardList = ({ animes }) => {
   return (
     <div className="cards-container">
       {pending ? (
-        <h2>Pending ...</h2>
+        <h2>Oups Check Your Network ...</h2>
       ) : (
         animes.map((anime) => (
           <Card
