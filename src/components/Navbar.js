@@ -6,7 +6,9 @@ import '../styles/navbar.css';
 const Navbar = () => (
   <nav className="navbar">
     <ul>
-      <NavLink to="/"><AiFillCaretLeft /></NavLink>
+      <NavLink to="/animaty">
+        <AiFillCaretLeft />
+      </NavLink>
       <li>ANIMATY</li>
       <li>
         <MdKeyboardVoice />

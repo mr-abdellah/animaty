@@ -12,11 +12,6 @@ const Detail = () => {
         .filter((anime) => anime.title === title)
         .map((anime) => (
           <div className="anime-detail-container" key={anime.id}>
-            <div
-              className="detail-background"
-              style={{ backgroundImage: `url(${anime.img})` }}
-              key={anime.id}
-            />
             <img src={anime.img} alt={anime.title} />
             <h3 className="anime-detail-title">{anime.title}</h3>
             <p className="anime-detail-description">
@@ -24,10 +19,10 @@ const Detail = () => {
               <br />
               {anime.description}
             </p>
-            <p className="anime-detail-year">{anime.year}</p>
-            <p className="anime-detail-type">{anime.type}</p>
-            <p className="anime-detail-episodes">{anime.episodes}</p>
-            <p className="anime-detail-rating">{anime.rating}</p>
+            <p className="anime-detail-year">{`Release Date: ${anime.year}`}</p>
+            <p className="anime-detail-type">{`Type : ${anime.type}`}</p>
+            <p className="anime-detail-episodes">{`Episodes: ${anime.episodes}`}</p>
+            <p className="anime-detail-rating">{`Allowed Just For: ${anime.rating}`}</p>
           </div>
         ))}
     </>

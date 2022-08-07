@@ -11,11 +11,15 @@ import CardList from './CardList';
 const Container = () => {
   const animes = useSelector((state) => state.animes.animes);
   const [query, setQuery] = useState('');
-  console.log(query);
   const search = () => animes.filter((anime) => (
-    anime.title.toLowerCase().includes(query)
-      || anime.description.toLowerCase().includes(query)
+    anime.title.toLowerCase().includes(query.toLocaleLowerCase())
+      || anime.description.toLowerCase().includes(query.toLowerCase())
   ));
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    search();
+  };
 
   return (
     <div className="container">
@@ -27,7 +31,7 @@ const Container = () => {
             aria-describedby="basic-addon2"
             onChange={(e) => setQuery(e.target.value)}
           />
-          <Button variant="outline-primary" id="button-addon2">
+          <Button variant="outline-primary" id="button-addon2" onClick={handleSearch}>
             Search
           </Button>
         </InputGroup>

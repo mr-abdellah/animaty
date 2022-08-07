@@ -9,9 +9,7 @@ const CardItem = ({
     <img src={img} alt={title} />
     <h4 id="card-title">{title}</h4>
     <p>{`Episodes : ${episodes}`}</p>
-    <Link to={`/anime/${title}`}>
-      <button type="button" id="card-button">More Details</button>
-    </Link>
+    <Link id="card-btn" to={`/anime/${title}`}>More Details</Link>
   </div>
 );
 

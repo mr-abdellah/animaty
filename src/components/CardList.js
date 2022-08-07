@@ -1,10 +1,17 @@
 /* eslint-disable react/prop-types */
 import '../styles/card.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Card from './Card';
+import { loadAnime } from '../redux/cards';
 
 const CardList = ({ animes }) => {
   const { pending } = useSelector((state) => state.animes);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(loadAnime());
+  }, []);
 
   return (
     <div className="cards-container">
