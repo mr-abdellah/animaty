@@ -1,10 +1,18 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Container from './components/Container';
+import Detail from './components/Detail';
 
 function App() {
   return (
-    <div className="App">
-      <h1>test</h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/animaty" element={<Container />} />
+        <Route exact path="/anime/:title" element={<Detail />} />
+      </Routes>
+    </Router>
   );
 }
 
