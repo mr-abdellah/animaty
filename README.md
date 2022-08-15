@@ -18,7 +18,7 @@
 > To try the web App enter here [LIVE DEMO](https://mr-abdellah.github.io/animaty)
 
 ## Project Presentation
-- [App Live Demo](https://www.loom.com/share/7fad9e8a92cc43b0a2452c4df073b960)
+- [Tap here to watch](https://www.loom.com/share/ef0025f71cca494093d388ad1b8c215f)
 
 ## Getting Started
 
