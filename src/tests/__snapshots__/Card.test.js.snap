@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders properly 1`] = `
+<div
+  className="card-item"
+>
+  <img />
+  <h4
+    id="card-title"
+  />
+  <p>
+    Episodes : undefined
+  </p>
+  <a
+    href="/anime/undefined"
+    id="card-btn"
+    onClick={[Function]}
+  >
+    More Details
+  </a>
+</div>
+`;

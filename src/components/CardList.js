@@ -18,7 +18,7 @@ const CardList = ({ animes }) => {
       {pending ? (
         <h2>Oups Check Your Network ...</h2>
       ) : (
-        animes.map((anime) => (
+        animes?.map((anime) => (
           <Card
             pending={pending}
             key={anime.id}

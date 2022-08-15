@@ -8,8 +8,7 @@ const Detail = () => {
   const { title } = useParams();
   return (
     <>
-      {animes
-        .filter((anime) => anime.title === title)
+      {animes?.filter((anime) => anime.title === title)
         .map((anime) => (
           <div className="anime-detail-container" key={anime.id}>
             <img src={anime.img} alt={anime.title} />

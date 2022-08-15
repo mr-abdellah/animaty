@@ -6,7 +6,7 @@ import '../styles/navbar.css';
 const Navbar = () => (
   <nav className="navbar">
     <ul>
-      <NavLink to="/animaty">
+      <NavLink to="/home">
         <AiFillCaretLeft />
       </NavLink>
       <li>ANIMATY</li>

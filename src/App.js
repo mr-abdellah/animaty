@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/animaty" element={<Container />} />
+        <Route exact path="/home" element={<Container />} />
         <Route exact path="/anime/:title" element={<Detail />} />
       </Routes>
     </Router>
