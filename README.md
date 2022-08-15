@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 - open a terminal
 - run ``` git clone git@github.com:mr-abdellah/animaty.git```
-- run ``` cd spacex-traveler```
+- run ``` cd animaty```
 - then run ``` npm install```
 - then run ``` npm start```
 
