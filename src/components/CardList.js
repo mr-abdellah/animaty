@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import '../styles/card.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
@@ -35,6 +35,14 @@ const CardList = ({ animes }) => {
       )}
     </div>
   );
+};
+
+CardList.propTypes = {
+  animes: PropTypes.instanceOf(Array),
+};
+
+CardList.defaultProps = {
+  animes: [],
 };
 
 export default CardList;

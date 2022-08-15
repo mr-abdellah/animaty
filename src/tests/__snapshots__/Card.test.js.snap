@@ -1,18 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders properly 1`] = `
+exports[` Card renders properly 1`] = `
 <div
   className="card-item"
 >
-  <img />
+  <img
+    alt=""
+    src={null}
+  />
   <h4
     id="card-title"
   />
   <p>
-    Episodes : undefined
+    Episodes : null
   </p>
   <a
-    href="/anime/undefined"
+    href="/anime/"
     id="card-btn"
     onClick={[Function]}
   >

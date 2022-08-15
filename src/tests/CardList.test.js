@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import React from 'react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';

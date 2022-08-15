@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import store from '../redux/store';
 import CardItem from '../components/Card';
 
-it('renders properly', () => {
+it(' Card renders properly', () => {
   const tree = renderer
     .create(
       <Router>
